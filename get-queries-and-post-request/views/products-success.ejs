@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs'); %>
+    <div class="app-container">
+        <section>
+            <h1>Welcome to node js self learning website.</h1>
+            <p>You have successfully added a product.</p>
+            <dl>
+                <div>
+                    <dt>Product Name</dt>
+                    <dd><%= data.pName %></dd>
+                </div>
+                <div>
+                    <dt>Product Category</dt>
+                    <dd><%= data.pCategory %></dd>
+                </div>
+            </dl>
+        </section>
+    </div>
+<%- include('partials/footer.ejs'); %>

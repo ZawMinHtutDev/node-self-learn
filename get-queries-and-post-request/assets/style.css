@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+h1 {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+h2 {
+    color: #eee;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 1px;
+}
+p, label {
+    color: #ddd;
+    font-weight: 500;
+    text-align: center;
+}
+
+.app-container {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 20px 15px;
+}
+
+.p-form label, .p-form input {
+    display: block;
+    margin: auto;
+}
+.p-form label {
+    margin-bottom: 10px;
+}
+.p-form input {
+    margin-bottom: 20px;
+}
+
+.p-form input[type="text"] {
+    min-height: 20px;
+    min-width: 200px;
+    padding: 5px;
+}
+
+.p-form input[type="submit"] {
+    padding: 10px 15px;
+    background-color: skyblue;
+    border-color: transparent;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+dl {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+dl div {
+    width: 60%;
+    padding: 20px 0;
+}
+dl div:not(:last-child) {
+    border-bottom: 1px solid #888;
+}
+
+dt {
+    color: #fff;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+dd {
+    color: #ddd;
+    font-weight: 500;
+    margin-bottom: 10px;
+}

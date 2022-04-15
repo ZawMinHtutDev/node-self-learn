@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs'); %>
+
+<div class="app-container">
+    <section>
+        <h1>Welcome to Node JS self learning website.</h1>
+        <% if(qs.name && qs.category) { %>
+
+            <p>
+                You have searched for <strong><%= qs.name %></strong> under <strong><%= qs.category %></strong>
+                category.
+            </p>
+
+        <% } else { %>
+
+            <p>Try some queries search in url bar.</p>
+            <p>or</p>
+            <h2>Add a product</h2>
+
+            <%- include('partials/products-form.ejs'); %>
+            
+        <% } %>
+    </section>
+</div>
+
+<%- include('partials/footer.ejs'); %>
